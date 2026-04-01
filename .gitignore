@@ -1,0 +1,13 @@
+# 1. Create the .gitignore file so you don't push garbage
+echo "backend/venv/" >> .gitignore
+echo "frontend/node_modules/" >> .gitignore
+echo "backend/uploads/*" >> .gitignore
+echo "backend/__pycache__/" >> .gitignore
+echo ".DS_Store" >> .gitignore
+
+# 2. Initialize Git
+git init
+
+# 3. Add everything and commit
+git add .
+git commit -m "Initial commit: Built a decoupled React/FastAPI semantic search pipeline"
